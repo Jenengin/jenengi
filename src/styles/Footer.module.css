@@ -1,0 +1,19 @@
+/* styles/Footer.module.css */
+.footer {
+  background-color: #f0f0f0;
+  padding: 2.5rem 0;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .footerContent {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}

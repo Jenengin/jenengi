@@ -1,0 +1,29 @@
+.header {
+  padding: 1.25rem 0;
+  background-color: var(--color-card);
+  box-shadow: var(--shadow-sm);
+}
+
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navMenu {
+  display: flex;
+  list-style: none;
+}
+
+.navMenu li {
+  margin-left: 1.25rem;
+}
+
+.navMenu li a:hover {
+  text-decoration: underline;
+}

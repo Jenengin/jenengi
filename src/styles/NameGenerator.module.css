@@ -1,0 +1,98 @@
+.nameGenerator {
+  padding: 5rem 0;
+}
+
+.nameGenerator h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.nameForm {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.inputGroup {
+  margin-bottom: 1.5rem;
+}
+
+.inputGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.nameTypes {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.nameType {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nameType:hover {
+  background: #f8f8f8;
+}
+
+.nameType.active {
+  background: var(--color-primary);
+  color: white;
+  border-color: var(--color-primary);
+}
+
+.resultsContainer {
+  margin-top: 2rem;
+  background: var(--color-card);
+  padding: 1.5rem;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+}
+
+.nameList {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.nameItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.nameItem:last-child {
+  border-bottom: none;
+}
+
+.copyButton {
+  background: #f0f0f0;
+  border: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+
+.copyButton:hover {
+  background: #e0e0e0;
+}
+
+@media (max-width: 640px) {
+  .nameTypes {
+    flex-wrap: wrap;
+  }
+  
+  .nameType {
+    flex-basis: 45%;
+  }
+}
