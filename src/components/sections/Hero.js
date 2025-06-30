@@ -7,7 +7,6 @@ export default function Hero() {
   const [keyword, setKeyword] = useState('')
   
   const handleTryNow = () => {
-    // Scroll to name generator section
     document.querySelector('#name-generator').scrollIntoView({ 
       behavior: 'smooth' 
     })

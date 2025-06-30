@@ -6,7 +6,7 @@ import styles from '../../styles/NameGenerator.module.css'
 
 export default function NameGenerator() {
   const [keyword, setKeyword] = useState('')
-  const [nameType, setNameType] = useState('brand') // Default to 'brand'
+  const [nameType, setNameType] = useState('brand') 
   const [generatedNames, setGeneratedNames] = useState([])
   const [isLoading, setIsLoading] = useState(false)
 
@@ -19,8 +19,6 @@ export default function NameGenerator() {
     setIsLoading(true)
     
     try {
-      // In a real implementation, call to an API would go here
-      // For demo purposes, we'll use a simulated response with a local function
       const names = await simulateNameGeneration(keyword, nameType)
       setGeneratedNames(names)
     } catch (error) {
@@ -31,8 +29,7 @@ export default function NameGenerator() {
     }
   }
 
-  // Mock function to simulate API call to a name generator
-  // In a real app, this would be replaced with an actual API call
+ 
   const simulateNameGeneration = (keyword, type) => {
     return new Promise((resolve) => {
       setTimeout(() => {
