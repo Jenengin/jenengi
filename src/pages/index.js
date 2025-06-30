@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Jenengi - Generator Nama Sempurna</title>
+        <title>Jenengi</title>
         <meta name="description" content="Generator nama untuk proyek, perusahaan, merek, dan banyak lagi." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
