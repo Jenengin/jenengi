@@ -10,7 +10,7 @@ export default function Header() {
           <div className={styles.logo}>Jenengi</div>
           <nav>
             <ul className={styles.navMenu}>
-              <li><Link href="/">Coba</Link></li>
+              <li><Link href="/">Beranda</Link></li>
               <li><Link href="/kategori">Fitur</Link></li>
               <li><Link href="/tentang">Bergabung</Link></li>
               <li><Link href="/kontak">Tentang Kami</Link></li>
